@@ -4,8 +4,6 @@ let minigamedesc =
 "<img src='" + minigamephoto + "'><br><br>" +
 "Welcome to a game of both skill AND luck! You throw one of these little darts at this wall of balloons, and if you manage to pop one, you get a prize! The cost is 2 silver pieces. Would you like to play?<br><br>";
 
-letwinorlose = "";
-
 let minigameprice = "2";
 let minigamedc = "16";
 let minigameprize = "Candy";

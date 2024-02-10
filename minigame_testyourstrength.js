@@ -21,7 +21,7 @@ let curractor = canvas.tokens.controlled[0].actor;
 let currspkr = ChatMessage.getSpeaker({ actor: curractor });
 let charname = curractor.name;
 
-let minigamerollmod = canvas.tokens.controlled[0].actor.system.abilities.dex.mod;
+let minigamerollmod = canvas.tokens.controlled[0].actor.system.abilities.str.mod;
 
 //------------------------------------------------------------------
 //Open a dialog box

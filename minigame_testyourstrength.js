@@ -4,8 +4,6 @@ let minigamedesc =
 "<img src='" + minigamephoto + "'><br><br>" +
 "Step right up! Test your strength! Can you do it? Can you get the bell to ring? Are you strong enough to win a prize? Come on down! One swing of the hammer costs only 5 silver pieces! Would you like to play?<br><br>";
 
-letwinorlose = "";
-
 let minigameprice = "5";
 let minigamedc = "20";
 let minigameprize = "Hammer";

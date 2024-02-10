@@ -29,7 +29,7 @@ let minigamerollmod = canvas.tokens.controlled[0].actor.system.abilities.dex.mod
 let goldpieces = curractor.system.currency.gp;
 let silverpieces = curractor.system.currency.sp;
 
-if ((silverpieces < 1) && (goldpieces > 0))
+if ((silverpieces < minigameprice) && (goldpieces > 0))
 {
  goldpieces = goldpieces - 1;
  silverpieces = silverpieces + 10;

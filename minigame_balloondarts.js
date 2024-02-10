@@ -41,7 +41,7 @@ new Dialog({
   buttons: {
     roll: {
       label: "Play",
-      condition: silverpieces >= 2,
+      condition: silverpieces >= minigameprice,
       callback: async function() {
  silverpieces = silverpieces - minigameprice;
  await curractor.update({ "system.currency.sp": silverpieces});

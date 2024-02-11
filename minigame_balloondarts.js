@@ -1,10 +1,13 @@
 let minigamename = "Balloon Darts";
 let minigamephoto = "https://assets.forge-vtt.com/61f0a122808acef02350ca8c/Scott%20Photos/minigames/minigame_balloons.png";
+let minigameprice = "2";
+
 let minigamedesc = 
 "<img src='" + minigamephoto + "'><br><br>" +
-"Welcome to a game of both skill AND luck! You throw one of these little darts at this wall of balloons, and if you manage to pop one, you get a prize! The cost is 2 silver pieces. Would you like to play?<br><br>";
+"Welcome to a game of both skill AND luck! You throw one of these little darts at this wall of balloons, and if you manage to pop one, you get a prize! The cost is " + minigameprice + " silver pieces. Would you like to play?<br><br>";
 
-let minigameprice = "2";
+letwinorlose = "";
+
 let minigamedc = "16";
 let minigameprize = "Candy";
 
@@ -35,11 +38,12 @@ if ((silverpieces < minigameprice) && (goldpieces > 0))
 }
 
 new Dialog({
+  title: minigamename,
   content: minigamedesc,
   buttons: {
     roll: {
       label: "Play",
-      condition: silverpieces >= minigameprice,
+      condition: silverpieces >= 2,
       callback: async function() {
  silverpieces = silverpieces - minigameprice;
  await curractor.update({ "system.currency.sp": silverpieces});

@@ -38,6 +38,7 @@ if ((silverpieces < minigameprice) && (goldpieces > 0))
 }
 
 new Dialog({
+  title: minigamename,
   content: minigamedesc,
   buttons: {
     roll: {

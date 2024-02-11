@@ -1,8 +1,10 @@
 let minigamename = "Test Your Strength";
-let minigamephoto = "";
+let minigamephoto = "https://assets.forge-vtt.com/61f0a122808acef02350ca8c/Scott%20Photos/minigames/minigame_mallet3.png";
 let minigamedesc = 
 "<img src='" + minigamephoto + "'><br><br>" +
 "Step right up! Test your strength! Can you do it? Can you get the bell to ring? Are you strong enough to win a prize? Come on down! One swing of the hammer costs only 5 silver pieces! Would you like to play?<br><br>";
+
+letwinorlose = "";
 
 let minigameprice = "5";
 let minigamedc = "20";
@@ -35,6 +37,7 @@ if ((silverpieces < minigameprice) && (goldpieces > 0))
 }
 
 new Dialog({
+  title: minigamename,
   content: minigamedesc,
   buttons: {
     roll: {
